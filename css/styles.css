@@ -58,6 +58,7 @@ _______________________*/
 header{
     background: #2f3061;
     color: #f7fff7;
+    text-align: center;
 }
 
 
@@ -119,6 +120,18 @@ _______________________*/
 footer{
     background: #343434;
     color: #f7fff7;
+    text-align: center;
 }
 
+.contact-list{
+    list-style-type: none;
+    padding: 0;
+    display:flex;
+    justify-content: center;
+}
+
+.contact-list a{
+    padding: 15px;
+    display: inline-block;
+}
 
