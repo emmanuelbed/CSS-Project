@@ -80,7 +80,6 @@ _______________________*/
 header{
     background: #2f3061;
     color: #f7fff7;
-    text-align: center;
 }
 
 
@@ -111,10 +110,7 @@ _______________________*/
     overflow: hidden;
     
 }
-.project-item img{
-    float: left;
-    margin-right: 20px;
-}
+
 
 .project-item h3{
     margin-top: 0;
@@ -127,11 +123,7 @@ _______________________*/
     background: #a1c6d7;
 }
 
-.job-item{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    column-gap: 20px;
-}
+
 
 /* 
 Education 
@@ -156,14 +148,13 @@ _______________________*/
 footer{
     background: #343434;
     color: #f7fff7;
-    text-align: center;
+    
 }
 
 .contact-list{
     list-style-type: none;
     padding: 0;
-    display:flex;
-    justify-content: center;
+    
 }
 
 .contact-list a{
@@ -171,3 +162,42 @@ footer{
     display: inline-block;
 }
 
+
+/* 
+Responsive Styles  
+_______________________*/
+@media screen and (min-width:750px){
+    footer, header{
+        text-align: center;
+    }
+
+    .project-item img{
+        float: left;
+        margin-right: 20px;
+    }
+
+    .job-item{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 20px;
+    }
+    .contact-list{
+        display:flex;
+        justify-content: center;
+    }
+    
+}
+
+@media screen and (max-width:749px) {
+    h1{
+        font-size: 75px;
+        line-height: 0.9;
+        margin-bottom: 20px;
+    }
+    h2{
+        line-height: 1;
+    }
+    .contact-list a{
+        padding: 5px;
+    }
+}
